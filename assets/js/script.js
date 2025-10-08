@@ -148,6 +148,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     // Map Spanish navigation to English page names
     const navMap = {
       'acerca de': 'about',
+      'acerca de mí': 'about',
       'currículum': 'resume', 
       'portafolio': 'portfolio'
     };
