@@ -145,12 +145,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
     let navText = this.innerHTML.toLowerCase();
-    // Map Spanish navigation to English page names
-    const navMap = {
+    // Use dynamic navigation mapping from language.js
+    const navMap = window.currentNavMap || {
       'acerca de': 'about',
       'acerca de mí': 'about',
-      'currículum': 'resume', 
-      'portafolio': 'portfolio'
+      'about me': 'about',
+      'currículum': 'resume',
+      'resume': 'resume',
+      'portafolio': 'portfolio',
+      'portfolio': 'portfolio'
     };
     
     let pageName = navMap[navText] || navText;

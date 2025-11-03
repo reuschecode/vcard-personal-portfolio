@@ -514,6 +514,32 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+.language-select {
+  background: transparent;
+  border: 1px solid var(--jet);
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+
+.language-select:hover {
+  border-color: var(--orange-yellow-crayola);
+  color: var(--orange-yellow-crayola);
+}
+
+.language-select option {
+  background: var(--eerie-black-2);
+  color: var(--white-2);
+}
+
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
